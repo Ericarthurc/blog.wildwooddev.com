@@ -68,6 +68,7 @@ a:hover {
 .navbar-link {
   padding: 0 8px;
   color: #c678dd;
+  text-decoration: none;
 }
 
 .navbar-link:hover {
@@ -115,6 +116,7 @@ a:hover {
   /* display: flex; */
   /* flex-direction: column; */
   margin: 0 20%;
+  word-wrap: break-word;
 }
 
 #eric-christensen {
