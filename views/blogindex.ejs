@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - WildwoodTech</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/blog.css" />
+  </head>
+  <body>
+    <%- include('./includes/navbar', {path: "/"}); -%>
+    <div class="blogindex-container">
+      <h2 class="blogindex-container__header">Wildwood Tech Posts</h2>
+      <ul class="blogindex-container__posts">
+        <% for (const blog of blogs) { %>
+        <li class="blogindex-container__post">
+          -&#160;
+          <span
+            ><%= blog.blogDate.toLocaleDateString("en-US", { year: "numeric",
+            month: "2-digit", day: "2-digit", }); %>&#160;-&#160;</span
+          >
+          <div>
+            <a href="/blog/<%= blog.fileName%>">
+              <span><%= blog.blogTitle %></span></a
+            >
+          </div>
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </body>
+</html>
