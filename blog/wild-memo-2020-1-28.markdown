@@ -41,9 +41,10 @@ If you are having any issues with your Gmail accounts syncing please let me know
 
 ## Development
 
-If you are developing software or have already developed software that uses Google APIs you will need to upgrade those as well to the new APIs. Here is a link to the documents for all use cases: https://developers.google.com/identity/protocols/OAuth2WebServer
+If you are developing software or have already developed software that uses Google APIs you will need to upgrade those as well to the new APIs. <a href="https://developers.google.com/identity/protocols/OAuth2WebServer" target="_blank">Here is the link to the documents</a>.
 
 ## Conclusion
 
 Sorry, I know this is kind of annoying and there are a ton of weird use cases but it is ultimately for better security which benefits us all in the long run. It further prevents our work emails from being attacked, keeping us safer. If you have any questions or something was confusing please let me know. This all comes in affect on June 15, 2020 and will be finalized on February 15, 2021.
+
 ### Eric Christensen
