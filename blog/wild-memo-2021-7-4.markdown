@@ -76,7 +76,7 @@ The backend layout I choose for this project is based around a common design pat
 
 <div class="mvc">
 
-![Backend Layout](/images/blogmvc.png)
+![Backend Layout](/images/mvclayout.png)
 
 </div>
 
