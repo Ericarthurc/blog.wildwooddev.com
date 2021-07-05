@@ -47,7 +47,7 @@ Well… <a href="https://blog.wildwooddev.com/blog/wild-memo-2021-7-5" target="_
 
 ## New Part!
 
-Welp this is the site! I really hope you like it; if you click the <a href="#navbar">'Home'</a> at the top of the page that will take you to the master list of 'blog' posts, and then you can click the 'New WildwoodTech Blog Site!' link at the top of the list to come back here.
+Welp this is the site! I really hope you like it; if you click the <a href="#navbar">'Home'</a> at the top of the page that will take you to the master list of 'blog' posts, and then you can click the 'New Blog Site!' link at the top of the list to come back here.
 
 ## What this site can do!
 
