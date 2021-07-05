@@ -21,13 +21,13 @@ app.use(serve("./public"));
 app.use(blogRouter.allowedMethods()).use(blogRouter.routes());
 
 app.use(async (ctx: Context) => {
-  await ctx.redirect("/blog");
+  ctx.redirect("/blog");
 });
 
 app.use(async (ctx: Context) => {
   await ctx.render("404", { url: ctx.url, ip: ctx.ip });
 });
 
-app.listen(process.env.PORT, () =>
-  console.log(`Server running on port ${process.env.PORT}`)
+app.listen(PORT, () =>
+  console.log(`Server running on port ${PORT}`)
 );
