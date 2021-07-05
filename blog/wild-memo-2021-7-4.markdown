@@ -213,7 +213,7 @@ export const parseMarkdown = async (fileName: string) => {
 };
 ```
 
-Pretty crazy huh?! These two functions are how this website is possible. Using a combination of string regex manipulation, functional programming and advanced parsing I am able to convert Markdown files into HTML so you can enjoy these posts. I know this isn't very explanatory, but it's very complex and would take too long to layout. You can imagine it like this in simple terms; the parser is loaded a file that has `# Hello!` on it. When the parser sees a '#' it converts it to a `<h1>` then places the text after and adds a `</h1>` at the end for `<h1>Hello</h1>`. And the parser goes through every single line and knows how to translate the Markdown language to the HTML language. And this process is very fast! Here is a benchmark of the parser with a single markdown file from this site.
+Pretty crazy huh?! These two functions are how this website is possible. Using a combination of string regex manipulation, functional programming and advanced parsing I am able to convert Markdown files into HTML so you can enjoy these posts. I know this isn't very explanatory, but it's very complex and would take too long to layout. You can imagine it like this in simple terms; the parser loads a file that has `# Hello!` markdown in it. When the parser sees a '#' it converts it to a `<h1>` then places the text after and adds a `</h1>` at the end for `<h1>Hello</h1>`. And the parser goes through every single line and knows how to translate the Markdown language to the HTML language. And this process is very fast! Here is a benchmark of the parser with a single markdown file from this site.
 
 ```ps
 PS C:\Users\*\Desktop\parser> ts-node .\main.ts
