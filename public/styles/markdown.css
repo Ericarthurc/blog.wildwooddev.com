@@ -72,3 +72,15 @@ code.hljs {
 .hljs-link {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 1300px) {
+  code.hljs {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  code.hljs {
+    font-size: 10px;
+  }
+}

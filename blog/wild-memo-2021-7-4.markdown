@@ -86,7 +86,7 @@ This is a picture of some of the actual code layout for this site. You can see t
 - 'Views' take care of html templating, or what you see on the site
 - 'Controllers' are actions that are run when a web route is matched like "/blog"
 
-In the name of keeping this site very simple, no database is used for this site; all files are locally parsed through for data, instead of being placed in a database. And this site is so simple it only uses two controller style functions, so I didn't feel a need to dedicate the file space for them.
+In the name of keeping this site very simple, no database is used for this site; all files are locally parsed through for data, instead of being placed in a database. And this site is so simple it only uses two controller style functions, so I didn't feel a need to dedicate the file space for them (subject to change as the need grows).
 
 ## How Markdown is Parsed
 

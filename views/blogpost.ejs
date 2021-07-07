@@ -1,9 +1,10 @@
 <%- include('./includes/head', {title: `${title} - WildwoodTech`}); -%>
     <link rel="stylesheet" href="/styles/markdown.css" />
+    <link rel="stylesheet" href="/styles/templates/blogpost.css" />
     <script src="/highlight.min.js"></script>
   </head>
   <body>
-    <%- include('./includes/navbar', {path: "/blog"}); -%>
+    <%- include('./includes/navbar', {path: "/blog/post"}); -%>
 
     <div class="blog-container"><%-body%></div>
     <p class="tags">Tags: <% for( tag of tags ) { %>`<%- tag %>` <% }%></p>
