@@ -9,7 +9,7 @@ import seriesRouter from "./routes/series.route";
 
 dotenv.config();
 const PORT = process.env.PORT || 3000;
-const app = new koa();
+const app = new koa({proxy: true});
 
 // ejs template engine
 const render = views("./views", {
