@@ -1,0 +1,17 @@
+{
+ "name": "Wildwood Tech",
+ "short_name": "WildwoodTech",
+ "theme_color": "#ff5874",
+ "background_color": "#c678dd",
+ "display": "standalone",
+ "scope": "/",
+ "start_url": "https://blog.wildwooddev.com/",
+ "description": "Blog",
+ "orientation": "any",
+ "icons": [
+ {
+ "src": "",
+ "sizes": "1024x1024"
+ }
+ ]
+}

@@ -1,3 +1,3 @@
 ## blog.wildwooddev.com
 
-### v0.2.1-beta.3
+### v0.2.2-beta.1

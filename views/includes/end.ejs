@@ -1,0 +1,9 @@
+    <script>
+        if (!navigator.serviceWorker.controller) {
+        navigator.serviceWorker.register("/js/sw.js").then(function(reg) {
+        console.log("Service worker registered for scope: " + reg.scope);
+        });
+        }
+    </script>  
+  </body>
+</html>
