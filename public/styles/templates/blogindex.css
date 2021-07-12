@@ -19,7 +19,7 @@
 }
 
 .blogindex-container__post {
-  margin-bottom: 8px;
+  margin-bottom: 14px;
   display: flex;
 }
 
@@ -36,7 +36,7 @@
   );
   -webkit-mask-size: 200%;
   animation: shine 1.5s linear infinite;
-  color: #bb39e2;
+  color: #acf876;
   font-weight: bold;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .blogindex-container__post a .new:hover {
-  color: #e760e1;
+  color: #60e772;
 }
 
 @media screen and (max-width: 1300px) {
@@ -64,6 +64,13 @@
   .blogindex-container {
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .blogindex-container {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 14px;
   }
 }

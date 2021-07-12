@@ -7,6 +7,21 @@ Addition of markdown posts will not be versioned or require a changelog update.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.2-Beta.3] - 2021-07-12
+
+### Added
+
+- head.ejs [Ln7] | &lt;meta name="description" content="Wildwood Tech Blog For Learning"&gt;
+- /public/robots.txt
+- mainfest.json | added 512x512 .png
+
+### Changed
+
+- blogindex.css [Ln39] | .blogindex-container\_\_post a .new { color: #acf876; }
+- blogindex.css [Ln53] | .blogindex-container\_\_post a .new:hover { color: #60e772; }
+- blogindex.css [Ln22] | .blogindex-container\_\_post { margin-bottom: 14px; }
+- logo.svg | updated font to be consistent with site font
+
 ## [0.2.2-Beta.2] - 2021-07-11
 
 ### Added
