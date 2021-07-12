@@ -1,17 +1,7 @@
-@font-face {
-  font-family: "cascadia-code";
-  src: url("../fonts/cascadia-code/CascadiaCode-Regular.ttf");
-}
-@font-face {
-  font-family: "cascadia-code";
-  src: url("../fonts/cascadia-code/CascadiaCode-Bold.ttf");
-  font-weight: bold;
-}
-
 html {
   box-sizing: border-box;
-  /* font-family: "Lato", sans-serif; */
-  font-family: cascadia-code, sans-serif;
+  font-family: Ubuntu, sans-serif;
+  /* font-family: cascadia-code, sans-serif; */
   -webkit-tap-highlight-color: transparent;
   background-color: #282c34;
   color: #abb2bf;

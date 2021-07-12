@@ -5,13 +5,13 @@
  "background_color": "#c678dd",
  "display": "standalone",
  "scope": "/",
- "start_url": "https://blog.wildwooddev.com/",
+ "start_url": "/",
  "description": "Blog",
  "orientation": "any",
  "icons": [
- {
- "src": "",
- "sizes": "1024x1024"
- }
+    {
+    "src": "/images/logo.svg",
+    "sizes": "1024x1024"
+    }
  ]
 }
