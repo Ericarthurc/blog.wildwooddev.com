@@ -1,35 +1,50 @@
 import marked from "marked";
 import { promises as fs } from "fs";
+import { load } from "js-yaml";
 
-// v2 Parser
+// v3 metadata parser
 export const getBlogIndexArray = async () => {
-  interface IBlog {
-    fileName: string;
-    blogTitle: string;
-    blogDate: any;
-  }
   const blogsArray = [];
   const data = await fs.readdir("./blog/");
   for (const file of data) {
-    const blog = <IBlog>{};
-    blog.fileName = <string>file.substr(0, file.indexOf(".markdown"));
     const fileData = await fs.readFile(`./blog/${file}`);
-
-    const meParsed = fileData
-      .toString()
-      .substr(0, fileData.toString().indexOf("#"))
-      .replace(/---|  - |\r/g, "")
-      .split("\n")
-      .filter((x: any) => x != "")
-      .filter((x: any) => x != "tags:")
-      .map((x: any) => x.split(":").pop()?.trim());
-    blog.blogTitle = <string>meParsed[0];
-    blog.blogDate = new Date(<string>meParsed[1]);
+    const blog = {
+      fileName: file.substr(0, file.indexOf(".markdown")),
+      ...parseMD(fileData.toString()),
+    };
+    blog.date = new Date(blog.date);
     blogsArray.push(blog);
   }
-  return blogsArray.sort((a, b) => b.blogDate - a.blogDate);
+
+  return blogsArray.sort((a, b) => b.date - a.date);
 };
 
+// @ts-ignore
+const findMetadataIndices = (mem, item, i) => {
+  if (/^---/.test(item)) {
+    mem.push(i);
+  }
+  return mem;
+};
+
+// @ts-ignore
+const parseMetadata = ({ lines, metadataIndices }) => {
+  if (metadataIndices.length > 0) {
+    let metadata = lines.slice(metadataIndices[0] + 1, metadataIndices[1]);
+    return load(metadata.join("\n"));
+  }
+  return {};
+};
+
+// @ts-ignore
+const parseMD = (contents): any => {
+  const lines = contents.split("\n");
+  const metadataIndices = lines.reduce(findMetadataIndices, []);
+  const metadata = parseMetadata({ lines, metadataIndices });
+  return metadata;
+};
+
+// v1 markdown parser
 export const parseMarkdown = async (fileName: string) => {
   const data = await fs.readFile(`./blog/${fileName}.markdown`);
   const parsed = marked(data.toString());

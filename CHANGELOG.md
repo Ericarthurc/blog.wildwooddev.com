@@ -7,6 +7,23 @@ Addition of markdown posts will not be versioned or require a changelog update.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.3-Beta.1] - 2021-07-15
+
+### Added
+
+- Parser v3 allows for better meta data control, and future setup for /series
+- js-yaml package
+
+### Changed
+
+- blogindex.ejs | updated blog object fields to match new parser
+
+### Removed
+
+- pug package
+- cheerio package
+- node-html-parser package
+
 ## [0.2.2-Beta.3] - 2021-07-12
 
 ### Added

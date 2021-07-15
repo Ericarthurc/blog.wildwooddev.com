@@ -29,4 +29,5 @@ I really want to talk about VPN hype for a second. VPN’s are becoming way more
 So to sum it all up, the TLDR version, what we do on the internet is always being watched and saved. Companies capitalize on this to make money. There are tools available to help prevent your data being sold; but still best practice is to just be cautious of what you give away on the web.
 
 Thanks for reading! Your friendly neighborhood IT guy!
+
 ### Eric Christensen
