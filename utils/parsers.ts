@@ -2,7 +2,10 @@ import marked from "marked";
 import { promises as fs } from "fs";
 import { load } from "js-yaml";
 
-// v3 metadata parser
+/**
+ * @desc v3 metadata parser
+ * @returns parsed and sorted by date array of metadata
+ */
 export const getBlogIndexArray = async () => {
   const blogsArray = [];
   const data = await fs.readdir("./blog/");
@@ -17,6 +20,25 @@ export const getBlogIndexArray = async () => {
   }
 
   return blogsArray.sort((a, b) => b.date - a.date);
+};
+
+/**
+ * @desc v1 series parser
+ * @returns parsed and sorted series by alphabetical order
+ */
+export const getSeriesIndexArray = async () => {
+  const seriesArray = [];
+  const data = await fs.readdir("./blog/");
+  for (const file of data) {
+    const fileData = await fs.readFile(`./blog/${file}`);
+    const meta = parseMD(fileData.toString());
+    if (meta.series === undefined) {
+      continue;
+    }
+    seriesArray.push(meta.series);
+  }
+
+  return seriesArray.sort((a, b) => a.localeCompare(b));
 };
 
 // @ts-ignore
@@ -44,7 +66,11 @@ const parseMD = (contents): any => {
   return metadata;
 };
 
-// v1 markdown parser
+/**
+ * @desc v1 markdown parser
+ * @param filename takes markdown filename
+ * @returns parsed object
+ */
 export const parseMarkdown = async (fileName: string) => {
   const data = await fs.readFile(`./blog/${fileName}.markdown`);
   const parsed = marked(data.toString());

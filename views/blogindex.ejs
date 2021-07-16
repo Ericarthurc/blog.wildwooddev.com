@@ -4,10 +4,10 @@
   <body>
     <%- include('./includes/navbar', {path: "/blog"}); -%>
     <div class="blogindex-container">
-      <h2 class="blogindex-container__header">Wildwood Tech Posts</h2>
-      <ul class="blogindex-container__posts">
+      <h2 class="blogindex-header">Wildwood Tech Posts</h2>
+      <ul class="blogindex-posts">
         <% for (const blog of blogs) { %>
-        <li class="blogindex-container__post">
+        <li class="blogindex-posts__post">
           -&#160;
           <span
             ><%= blog.date.toLocaleDateString("en-US", { year: "numeric",

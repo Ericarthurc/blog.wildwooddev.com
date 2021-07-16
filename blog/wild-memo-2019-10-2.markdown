@@ -5,6 +5,7 @@ tags:
   - wildwood
   - macos
   - update
+series: macOs
 ---
 
 # Mac Os Catalina 10.15

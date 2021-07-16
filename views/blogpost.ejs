@@ -1,4 +1,4 @@
-<%- include('./includes/head', {title: `${title} - WildwoodTech`}); -%>
+<%- include('./includes/head', {title: `${blog.title} - WildwoodTech`}); -%>
     <link rel="stylesheet" href="/styles/markdown.css" />
     <link rel="stylesheet" href="/styles/templates/blogpost.css" />
     <script src="/highlight.min.js"></script>
@@ -6,8 +6,8 @@
   <body>
     <%- include('./includes/navbar', {path: "/blog/post"}); -%>
 
-    <div class="blog-container"><%-body%></div>
-    <p class="tags">Tags: <% for( tag of tags ) { %>`<%- tag %>` <% }%></p>
+    <div class="blog-container"><%-blog.body%></div>
+    <p class="tags">Tags: <% for( tag of blog.header.tags ) { %>`<%- tag %>` <% }%></p>
     <script>
       hljs.highlightAll();
     </script>

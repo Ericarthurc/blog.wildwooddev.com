@@ -5,6 +5,7 @@ tags:
   - wildwood
   - google
   - authentication
+series: apple
 ---
 
 # Google Authentication Update

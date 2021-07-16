@@ -5,6 +5,7 @@ tags:
   - wildwood
   - security
   - vpn
+series: security
 ---
 
 # Data Selling, Cookies and Vpn Hype

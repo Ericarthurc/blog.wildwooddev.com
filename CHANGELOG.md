@@ -7,6 +7,23 @@ Addition of markdown posts will not be versioned or require a changelog update.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.3-Beta.3] - 2021-07-16
+
+### Added
+
+- series.ejs
+- series.css
+- parsers.ts | getSeriesIndexArray method
+
+### Changed
+
+- blog.controller.ts [Ln31] | changed to sending the whole object
+- blogpost.ejs | udpated to reflect single object injection
+- blogindex.ejs | updated css classes to match other html classes
+- blogindex.css | updated class names
+- seriesindex.ejs | fixed class name typo, service => seriesindex
+- series.css => seriesindex.css | fixed class name typo, service => seriesindex
+
 ## [0.2.3-Beta.2] - 2021-07-15
 
 ### Added

@@ -1,15 +1,22 @@
 <%- include('./includes/head', {title: "Series - WildwoodTech" }); -%>
-  <link rel="stylesheet" href="/styles/templates/series.css" />
+  <link rel="stylesheet" href="/styles/templates/seriesindex.css" />
   </head>
 
   <body>
     <%- include('./includes/navbar', {path: "/series" }); -%>
-      <div class="service-container">
-        <div class="service-header">
-          <h2 class="service-header_title">Coming soon!</h2>
-        </div>
-        <div>
-          <p>Blog posts will be categorized by series tags!</p>
-        </div>
+      <div class="seriesindex-container">
+        <h2 class="seriesindex-header">Series Posts</h2>
+        <ul class="seriesindex-posts">
+          <% for (const series of seriesArray) { %>
+            <l1 class="seriesindex-posts__post">
+              -&#160;
+              <div>
+                <a href="/series/<%= series%>">
+                  <span class="seriesindex-name"><%= series %></span></a
+                >
+              </div>
+            </l1>
+          <% } %>
+        </ul>
       </div>
 <%- include('./includes/end'); -%>
