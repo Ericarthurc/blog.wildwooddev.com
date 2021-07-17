@@ -24,11 +24,6 @@ app.use(homeRouter.allowedMethods()).use(homeRouter.routes());
 app.use(blogRouter.allowedMethods()).use(blogRouter.routes());
 app.use(seriesRouter.allowedMethods()).use(seriesRouter.routes());
 
-// Redirect all
-// app.use(async (ctx: Context) => {
-//   ctx.redirect("/blog");
-// });
-
 app.use(async (ctx: Context) => {
   await ctx.render("404", { url: ctx.url, ip: ctx.ip });
 });

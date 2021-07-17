@@ -5,6 +5,7 @@ tags:
   - wildwood
   - macos
   - printers
+series: macOs
 ---
 
 # Mac Users and Xerox C75
@@ -37,4 +38,5 @@ Also, really quick I wanted to address this again. It is really critical we are 
 ## Conclusion
 
 Thanks for reading! If you have any questions please let me know.
+
 ### Eric Christensen

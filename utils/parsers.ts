@@ -19,6 +19,7 @@ export const getBlogIndexArray = async () => {
     blogsArray.push(blog);
   }
 
+  // sort by date, newest to oldest
   return blogsArray.sort((a, b) => b.date - a.date);
 };
 
@@ -38,7 +39,41 @@ export const getSeriesIndexArray = async () => {
     seriesArray.push(meta.series);
   }
 
-  return seriesArray.sort((a, b) => a.localeCompare(b));
+  // remove duplicate series tags in the array
+  let unique = [...new Set(seriesArray)];
+
+  // sort by alphabetical order
+  return unique.sort((a, b) => a.localeCompare(b));
+};
+
+/**
+ * @desc v1 series post parser
+ * @param series takes series tag
+ * @returns lists of filenames for specific series
+ */
+export const getSeriesPosts = async (series: string) => {
+  const seriesPosts = [];
+  const data = await fs.readdir("./blog/");
+  for (const file of data) {
+    const fileData = await fs.readFile(`./blog/${file}`);
+    const meta = parseMD(fileData.toString());
+    if (meta.series === undefined || meta.series !== series) {
+      continue;
+    }
+    seriesPosts.push({
+      filename: file.substr(0, file.indexOf(".markdown")),
+      title: meta.title,
+      date: new Date(meta.date),
+    });
+  }
+
+  // if no series is found, throw error
+  if (seriesPosts.length == 0) {
+    throw new Error("Series now found!");
+  }
+
+  // sort by date, newest to oldest
+  return seriesPosts.sort((a: any, b: any) => b.date - a.date);
 };
 
 // @ts-ignore

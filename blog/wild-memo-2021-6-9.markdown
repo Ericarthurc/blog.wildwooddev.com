@@ -4,6 +4,7 @@ date: June 9, 2021
 tags:
   - wildwood
   - browsers
+series: browsers
 ---
 
 # Browser Choice and Safety

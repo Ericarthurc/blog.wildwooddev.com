@@ -5,6 +5,7 @@ tags:
   - wildwood
   - macos
   - upgrade
+series: macOs
 ---
 
 # Big Sur and Arm Macs
@@ -40,4 +41,5 @@ This category is currently every Mac owner on campus; with this release of ‘Bi
 In the current state I would recommend don’t upgrade to ‘Big Sur’ and don’t buy an ARM Mac if you want support for the workflow here at Wildwood. I will be watching this whole situation very closely and hopefully will have more information at the beginning of the new year.
 
 Your friendly neighborhood IT guy,
+
 ### Eric Christensen

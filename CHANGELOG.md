@@ -7,6 +7,24 @@ Addition of markdown posts will not be versioned or require a changelog update.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.3-Beta.4] - 2021-07-17
+
+### Added
+
+- parsers.ts | getSeriesIndexArray() | pass array through a `Set` to remove duplicate values
+- tsconfig.json | uncommented `"downlevelIteration": true` to allow Set
+- parsers.ts | getSeriesPosts() | returns blog links by series tag
+
+### Changed
+
+- home.route.ts | route all '/' traffic to '/blog' until I can come up with a home page
+- navbar.ejs | comment out 'home' '/' link
+- series.controller.ts | getSeries() | working route now
+- seriesindex.ejs | updated to work with new object
+- series.ejs | updated to work with new object
+- series.css | added class styles
+- updated some blog markdown files with the new 'series' category
+
 ## [0.2.3-Beta.3] - 2021-07-16
 
 ### Added
