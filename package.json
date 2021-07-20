@@ -1,8 +1,8 @@
 {
   "name": "blog.wildwooddev.com",
-  "version": "0.2.3-beta.5",
+  "version": "0.2.3-beta.6",
   "scripts": {
-    "start": "ts-node main.ts",
+    "start": "ts-node --transpile-only main.ts",
     "dev": "nodemon main.ts"
   },
   "author": "Ericarthurc",
