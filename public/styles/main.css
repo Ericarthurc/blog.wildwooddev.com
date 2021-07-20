@@ -47,15 +47,6 @@ h4 {
   color: #56b6c2;
 }
 
-a {
-  text-decoration: underline;
-  color: #d19a66;
-}
-
-a:hover {
-  color: #e6c07b;
-}
-
 .navbar {
   display: flex;
   justify-content: center;

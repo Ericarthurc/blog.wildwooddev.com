@@ -25,6 +25,19 @@
 
 .blogindex-posts__post a {
   text-decoration: none;
+  color: #d19a66;
+}
+
+.blogindex-posts__post a:hover {
+  color: #e6c07b;
+}
+
+.blogindex-posts__post a:visited {
+  color: #e6c07b;
+}
+
+.blogindex-posts__post a:visited:hover {
+  color: #d19a66;
 }
 
 .blogindex-posts__post a .new {

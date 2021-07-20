@@ -1,6 +1,6 @@
 {
   "name": "blog.wildwooddev.com",
-  "version": "0.2.3-beta.4",
+  "version": "0.2.3-beta.5",
   "scripts": {
     "start": "ts-node main.ts",
     "dev": "nodemon main.ts"
