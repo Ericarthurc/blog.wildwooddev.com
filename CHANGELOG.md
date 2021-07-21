@@ -7,6 +7,26 @@ Addition of markdown posts will not be versioned or require a changelog update.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.3-Beta.7] - 2021-07-21
+
+### Added
+
+- /public/js/version.js
+- end.ejs | added `<script src="/js/version.js"></script>` before service worker
+
+### Changed
+
+- main.css | `html { color: #bec0c4; }` | lighter white for easier reading
+- blogpost.css | `.blog-container { line-height: 1.5rem; }` | more space between lines to improve readability
+- markdown.css | `pre code.hljs { line-height: 1.5rem; }` | keep line-height the same for code blocks
+- moved highlight.min.js to /public/js/
+- blogpost.ejs | updated script path for highlight.min.js
+- 404.ejs | updated script path for highlight.min.js
+
+### Fixed
+
+- blogpost.ejs | `<%- include('./includes/head', {title: `${blog.header.title} - WildwoodTech`}); -%>` | fixed typo in title passthrough
+
 ## [0.2.3-Beta.6] - 2021-07-20
 
 ### Changed

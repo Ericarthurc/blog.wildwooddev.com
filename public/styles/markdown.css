@@ -12,6 +12,7 @@ pre code.hljs {
   overflow-x: auto;
   padding: 1em;
   border-radius: 0.3rem;
+  line-height: normal;
 }
 code.hljs {
   font-size: 14px;

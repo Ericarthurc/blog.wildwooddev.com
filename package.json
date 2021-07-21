@@ -1,6 +1,6 @@
 {
   "name": "blog.wildwooddev.com",
-  "version": "0.2.3-beta.6",
+  "version": "0.2.3-beta.7",
   "scripts": {
     "start": "ts-node --transpile-only main.ts",
     "dev": "nodemon main.ts"

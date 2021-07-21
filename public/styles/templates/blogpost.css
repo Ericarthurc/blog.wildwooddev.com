@@ -3,6 +3,7 @@
   /* flex-direction: column; */
   margin: 0 20%;
   word-wrap: break-word;
+  line-height: 1.5rem;
 }
 
 #eric-christensen {
