@@ -6,8 +6,10 @@
   <body>
     <%- include('./includes/navbar', {path: "/blog/post"}); -%>
 
-    <div class="blog-container"><%-blog.body%></div>
-    <p class="tags">Tags: <% for( tag of blog.header.tags ) { %>`<%- tag %>` <% }%></p>
+    <div class="blog-container">
+      <%-blog.body%>
+      <p class="tags">Tags: <% for( tag of blog.header.tags ) { %>`<%- tag %>`&#160;&#160;<% }%></p>
+    </div>
     <script>
       hljs.highlightAll();
     </script>

@@ -7,6 +7,20 @@ Addition of markdown posts will not be versioned or require a changelog update.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.3-Beta.8] - 2021-07-21
+
+### Added
+
+- main.css | `* { text-rendering: geometricPrecision; }`
+- blogpost.css | `.tags { color: #82aaff; }`
+- blogpost.ejs | added two spaces after a tag `&#160;&#160;`
+
+### Changed
+
+- main.css | `html { font-family: "Nunito Sans", sans-serif; }` | changed the whole site font
+- blogpost.css | moved line-height to `.blog-container p` to avoid weird line-height on `h` tags
+- blogpost.ejs | move "tags" into `.blog-container` div
+
 ## [0.2.3-Beta.7] - 2021-07-21
 
 ### Added

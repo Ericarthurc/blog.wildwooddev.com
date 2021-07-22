@@ -3,6 +3,9 @@
   /* flex-direction: column; */
   margin: 0 20%;
   word-wrap: break-word;
+}
+
+.blog-container p {
   line-height: 1.5rem;
 }
 
@@ -12,6 +15,7 @@
 
 .tags {
   font-size: 13px;
+  color: #82aaff;
 }
 
 @media screen and (max-width: 1300px) {
