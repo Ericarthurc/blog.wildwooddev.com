@@ -1,8 +1,9 @@
 html {
   box-sizing: border-box;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-tap-highlight-color: transparent;
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: #1b1b1b;
   color: #bec0c4;
 }
 
@@ -37,7 +38,8 @@ h1:after {
 }
 
 h2 {
-  color: #ff5874;
+  color: #fdc229;
+  /* color: #ff5874; */
 }
 h3 {
   color: #61aeee;
@@ -51,8 +53,9 @@ h4 {
   display: flex;
   justify-content: center;
   padding: 10px 0;
-  background: #202124;
-  border-bottom: 1px solid #ff5874;
+  /* background: #202124; */
+  /* background: #000; */
+  /* border-bottom: 1px solid #ff5874; */
 }
 
 .navbar-link {

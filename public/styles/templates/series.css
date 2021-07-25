@@ -40,28 +40,6 @@
   color: #d19a66;
 }
 
-/* @media screen and (max-width: 1300px) {
-  .series-container {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .series-container {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .series-container {
-    margin-left: 3%;
-    margin-right: 3%;
-    font-size: 14px;
-  }
-} */
-
 /* smartphones, iPhone, portrait 480x320 phones */
 @media only screen and (max-width: 320px) {
   .series-container {
@@ -101,7 +79,6 @@
   .series-container {
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 18px;
   }
 }
 
