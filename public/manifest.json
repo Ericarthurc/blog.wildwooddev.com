@@ -1,8 +1,8 @@
 {
   "name": "Wildwood Tech",
   "short_name": "WildwoodTech",
-  "theme_color": "#ff5874",
-  "background_color": "#c678dd",
+  "theme_color": "#82AAFF",
+  "background_color": "#2E3440",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",

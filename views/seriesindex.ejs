@@ -8,12 +8,12 @@
         <h2 class="seriesindex-header">Series Posts</h2>
         <ul class="seriesindex-posts">
           <% for (const series of seriesArray) { %>
-            <l1 class="seriesindex-posts__post">
-              <div>
-                <a href="/series/<%= series%>">
-                  <span class="seriesindex-name"><%= series %></span></a
-                >
-              </div>
+            <l1>
+              <a class="seriesindex-posts__post" href="/series/<%= series%>">
+                <div>
+                    <span class="seriesindex-name"><%= series %></span>
+                </div>
+              </a>
             </l1>
           <% } %>
         </ul>
