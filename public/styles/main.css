@@ -20,20 +20,9 @@ body {
 
 h1 {
   text-align: center;
-  position: relative;
-  display: inline-block;
-  display: table-cell;
-  padding: 20px 0 30px;
-  margin: 0;
+  margin: 20px 0px;
   overflow: hidden;
   color: #82aaff;
-}
-
-h1:after {
-  content: "___________________________________________";
-  position: absolute;
-  bottom: 12px;
-  left: 0;
 }
 
 h2 {
