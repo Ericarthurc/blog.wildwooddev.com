@@ -8,17 +8,13 @@
         <h2 class="series-header"><%= `${series.charAt(0).toUpperCase() + series.slice(1)} Series `%></h2>
         <ul class="series-posts">
           <% for (const link of blogLinks) { %>
-            <l1 class="series-posts__post">
-              -&#160;
-              <span
-              ><%= link.date.toLocaleDateString("en-US", { year: "numeric",
-              month: "2-digit", day: "2-digit", }); %>&#160;-&#160;</span
-            >
-              <div>
-                <a href="/blog/<%= link.filename%>">
-                  <span class="series-name"><%= link.title %></span></a
-                >
-              </div>
+            <l1>
+              <a class="series-posts__post" href="/blog/<%= link.filename%>">
+                <div class="series-post__info">
+                    <span class="series-info__title"><%= link.title %></span>
+                    <span class="series-info__date"><%= link.date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", }); %></span>
+                </div>
+              </a>
             </l1>
           <% } %>
         </ul>

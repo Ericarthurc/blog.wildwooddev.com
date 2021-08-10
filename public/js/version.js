@@ -1,1 +1,1 @@
-console.log(`%cSite Version: 0.2.4-beta.1`, "color: #BADA55");
+console.log(`%cSite Version: 0.3.0-Beta.2`, "color: #BADA55");
